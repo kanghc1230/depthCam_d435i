@@ -1,6 +1,8 @@
 # depthCam_d435i
 
-d435i를 이용해 robotic proj에 필요한 코드를 코딩  
+### d435i를 이용해 robotic proj에 필요한 코드
+
+### 목적  
 객체 장애물을 확인하기위한 OpenCv 영상처리를 코딩  
 장애물 감지  
 장애물 폭 크기 거리 감지  
