@@ -1,0 +1,32 @@
+import numpy as np
+import cv2
+
+'''
+2차원 리스트 안에서 x,y 좌표로 이루어진 1차원리스트값들을 비교해 x의 max인 좌표를 찾고
+그 좌표 x,y를 가져오기
+'''
+
+hull = [[450,240],[110,320],[220,70],[640,240]]
+
+
+# 각배열의 첫번째값들을 비교
+max_x = [0]
+for counthull in hull:
+    if max_x < counthull:
+         max_x = counthull
+print(max_x) #640 240
+
+#print (np.argmax(hull, axis=1)) # 각 []리스트안에 높은값을 반환 0 1 0 0
+
+# print (np.max(hull[0])) #640
+# print (np.max(hull[2])) #320
+#
+# print (np.max(hull)) #640
+# print (np.min(hull)) #70
+#
+# print (np.max(hull,axis=1)) #[640 450 320 220]
+# print (np.min(hull,axis=1)) #[480 240 110  70]
+
+
+
+
